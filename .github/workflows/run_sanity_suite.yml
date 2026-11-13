@@ -38,10 +38,6 @@ jobs:
         run: |
           pip install pytest pytest-html pytest-xdist requests
 
-      - name: Install Playwright Browsers
-        run: |
-          playwright install
-
       - name: Clean old reports
         run: |
           rm -rf reports
